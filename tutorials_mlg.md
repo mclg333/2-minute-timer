@@ -4,12 +4,13 @@
 
 
 ## Section 1
-Begin by creating a variable called ``||variables.timer||``. 
+Begin by creating a variable called ``||variables:timer||``. 
 Drag the ``||variables.set timer to||`` block inside the ``||basic.on start||`` block.
 
 ```blocks
 let timer = 0
-timer = 0```
+timer = 0
+```
 
 
 ## Section 2
@@ -20,7 +21,8 @@ Inside the ``||basic.show showNumber||``add the ``||variable.timer|``.
 })
 basic.forever(function () {
     basic.showNumber(timer)
-})```
+})
+```
 
 
 ## Section 3
@@ -35,7 +37,9 @@ Change the first 0 to ``||variable.timer||`` and the second 0 with 120.
 Underneath, drag a ``||music. playMelody||`` block. 
 Click on the melody to set the melody. Leave the the tempo at 120 bpm.
 Underneath the ``||music. playMelody||`` block drag a ``||basic.show showIcon``||. 
-You can leave the heart icon or change it to your own.  
+You can leave the heart icon or change it to your own. 
+
+
 ```blocks
 })
 loops.everyInterval(1000, function () {
@@ -45,7 +49,8 @@ loops.everyInterval(1000, function () {
     if (timer == 120) {
         music.playMelody("C5 C5 C5 C5 C5 C5 C5 C5 ", 120)
         basic.showIcon(IconNames.Heart)
-    }```
+    }
+    ```
 
 ## Section 4
 Lastly, drag an ``||input.on onButtonPressed||`` block. Set it to button A.  
@@ -56,7 +61,8 @@ Underneath that one, add a `` ||variable.set timer to||`` block and enter 0 for 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
-    timer = 0```
+    timer = 0
+    ```
 
 ## Section 5
 
